@@ -55,11 +55,10 @@ The MNIST dataset is a collection of 70,000 handwritten digits (60,000 training 
 ## Model Architecture
 
 The model is firstly built using a simple feedforward neural network with the following architecture:
-
-    - Input Layer: Flattening the 28x28 images into a 784-dimensional vector.
-    - Hidden Layer 1: 128 neurons with ReLU activation.
-    - Hidden Layer 2: 64 neurons with ReLU activation. 
-    - Output Layer: 10 neurons with softmax activation (representing classes 0-9).
+- Input Layer: Flattening the 28x28 images into a 784-dimensional vector.
+- Hidden Layer 1: 128 neurons with ReLU activation.
+- Hidden Layer 2: 64 neurons with ReLU activation. 
+Ò- Output Layer: 10 neurons with softmax activation (representing classes 0-9).
 
 This project uses a Convolutional Neural Network (CNN) for the MNIST handwritten digit classification. CNNs are particularly effective for image recognition tasks due to their ability to detect patterns and spatial hierarchies in images. Below is an outline of the architecture used:
 
@@ -81,7 +80,7 @@ This project uses a Convolutional Neural Network (CNN) for the MNIST handwritten
     - Dense (128 units, ReLU activation): A dense layer with 128 units learns complex representations of the flattened features.
     - Dense (10 units, softmax activation): The final output layer has 10 units, each representing a class (digits 0–9) with a softmax activation function to produce probability scores for each digit.
 6. Compilation:
-    -The model is compiled using the Adam optimizer, with categorical cross-entropy as the loss function (suitable for multi-class classification) and accuracy as the evaluation metric.
+    - The model is compiled using the Adam optimizer, with categorical cross-entropy as the loss function (suitable for multi-class classification) and accuracy as the evaluation metric.
 
 ### Summary of Architecture:
 
