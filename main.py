@@ -50,8 +50,8 @@ def build_model():
     # Define the model architecture
     model = tf.keras.Sequential([
         tf.keras.layers.Flatten(input_shape=(28, 28)),
-        tf.keras.layers.Dense(256, activation='relu'),
-        tf.keras.layers.Dense(128, activation='relu'),
+        tf.keras.layers.Dense(1024, activation='relu'),
+        tf.keras.layers.Dense(512, activation='relu'),
         tf.keras.layers.Dense(10, activation='softmax')
     ])
     # Compile the model
@@ -60,7 +60,7 @@ def build_model():
 
 def train_model(model, X_train, y_train, X_val, y_val):
     # Train the model
-    history = model.fit(X_train, y_train, epochs=25, batch_size=128, validation_data=(X_val, y_val))
+    history = model.fit(X_train, y_train, epochs=20, batch_size=128, validation_data=(X_val, y_val))
 
     score = model.evaluate(X_val, y_val, batch_size=128)
     print("Validation Loss and Accuracy: ", score)
