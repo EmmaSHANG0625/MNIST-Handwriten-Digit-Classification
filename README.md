@@ -79,6 +79,7 @@ This project uses a Convolutional Neural Network (CNN) for the MNIST handwritten
 5. Fully Connected (Dense) Layers:
     - Dense (128 units, ReLU activation): A dense layer with 128 units learns complex representations of the flattened features.
     - Dense (10 units, softmax activation): The final output layer has 10 units, each representing a class (digits 0–9) with a softmax activation function to produce probability scores for each digit.
+    
 6. Compilation:
     - The model is compiled using the Adam optimizer, with categorical cross-entropy as the loss function (suitable for multi-class classification) and accuracy as the evaluation metric.
 
